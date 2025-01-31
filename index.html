@@ -17,6 +17,24 @@
     <!-- DaisyUI -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script> 
+  <!-- Font-awesome -->
+  <script src="https://kit.fontawesome.com/ca5f1f4271.js" crossorigin="anonymous"></script>
+  <!-- Font-colors-section -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+           'nav-color': '#FFDC26',
+           'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
+          }
+        }
+      }
+    }
+  </script>
+  
+    
   <!-- styles-part -->
   <style>
     .font-sora{
@@ -29,6 +47,50 @@
   </style>
 </head>
 <body>
-    <h1 class="font-sora">hello</h1>
+   <header>
+    <nav class="font-sora   bg-[#FFF9F4]  mb-10">
+      
+      <div class="flex items-center gap-5  justify-between   container mx-auto">
+        <div class="flex items-center gap-5 ">
+         <img src="c1-assets/logo-header.png" alt="" class="sm:ml-5">
+         <h3 class="font-normal text-2xl hidden lg:block">Browse <span class="text-[#FFDC26]">4</span>Pets</h3>
+        </div>
+          <!-- link-part -->
+          <div  class="hidden lg:block">
+           <ul class="flex gap-5 ">
+             <li><a href="">Find a pet</a></li>
+             <li><a href="">Breeds</a></li>
+             <li><a href="">Contact us</a></li>
+           </ul>
+          </div>
+          <!--  last-part -->
+          <div class="space-x-2 mt-4 hidden lg:block">
+           <i class="fa-regular fa-bell"></i>
+           <i class="fa-solid fa-magnifying-glass"></i>
+           <button class="btn btn-outline btn-warning font-normal text-xl ">Login</button>
+           <button class="btn btn-warning  text-xl font-normal">Register</button>
+           
+          </div>
+          <!-- hamburger menu -->
+          <div class="space-y-2 lg:hidden ">
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+        </div>
+      
+       </div>
+         
+
+    </nav>
+    <!-- banner part -->
+    <div class="container mx-auto">
+      <div>
+        <h3 class="font-adl font-normal text-5xl">Pamper Your Pet,<br> Because They Deserve <br> Bes</h3>
+        <p class="font-normal text-xl font-sora">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+        <button class="btn btn-warning mt-5 font-sora">Find a pet</button>
+      </div>
+      <img src="c1-assets/cat-big.png" alt="">
+    </div>
+   </header>
 </body>
 </html>
